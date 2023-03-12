@@ -75,6 +75,7 @@ h2 {
   height: 25px;
   transform: rotate(45deg);
   transition-duration: .25s;
+  user-select: none;
 }
 
 .section-picture {
@@ -83,6 +84,7 @@ h2 {
   border-radius: 18px;
   transition-duration: .35s;
   transition: .15s linear;
+  user-select: none;
 }
 
 .section-header {
