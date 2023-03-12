@@ -19,7 +19,7 @@ h2 {
 }
 
 .container:hover .section-input:not(:checked) + .section .section-title {
-  color: black;
+  color: #000000;
 }
 
 .container:hover .section-input + .section .cross-icon {
@@ -36,7 +36,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  border-top: 1px solid black;
+  border-top: 1px solid #000000;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 .section-input:checked + .section .section-title {
-  color: black;
+  color: #000000;
 }
 
 .section-input {
@@ -80,6 +80,7 @@ h2 {
 .section-picture {
   width: 0px;
   margin: 0px;
+  border-radius: 18px;
   transition-duration: .35s;
   transition: .15s linear;
 }
@@ -90,3 +91,14 @@ h2 {
   align-items: center;
   align-self: stretch;
 }
+
+.section-input:not(:checked) + .section:hover:active .section-title {
+  color: #797979;
+}
+
+.section-input:not(:checked) + .section:hover:active .section-picture {
+  opacity: 60%;
+  transition-duration: .15s;
+}
+
+ /* mobile 320x568, tablet 820x1180, desktop 1920×1080 */
