@@ -1,0 +1,92 @@
+h1 {
+  font-size: 50px;
+  font-family: 'Tilt Warp';
+  margin: auto;
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  font-family: 'Tilt Warp';
+  font-weight: 400;
+  text-align: left;
+  color: #797979;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  padding: 15px 0 15px 0;
+}
+
+.container:hover .section-input:not(:checked) + .section .section-title {
+  color: black;
+}
+
+.container:hover .section-input + .section .cross-icon {
+  display: block;
+}
+
+.content-borders {
+  width: auto;
+  height: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+.section:hover > .section-picture {
+  width: 400px;
+  margin: 15px;
+  transition-duration: .35s;
+  transition: .25s linear;
+}
+
+.section:hover > .section-header > .cross-icon {
+  transform: rotate(0deg);
+  transition-duration: .25s;
+}
+
+.section-input:checked + .section .section-title {
+  color: black;
+}
+
+.section-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.section-input:checked + .section .section-picture {
+  width: 400px;
+  margin: 15px;
+  transition-duration: .35s;
+  transition: .25s linear;
+}
+
+.cross-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  transition-duration: .25s;
+}
+
+.section-picture {
+  width: 0px;
+  margin: 0px;
+  transition-duration: .35s;
+  transition: .15s linear;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
