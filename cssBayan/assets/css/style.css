@@ -59,9 +59,7 @@ a {
 }
 
 .section-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+  display: none;
 }
 
 .section-input:checked+.section .section-picture {
@@ -98,6 +96,10 @@ a {
 
 .section-input:not(:checked)+.section:hover:active .section-title {
   color: #797979;
+}
+
+.section-input:not(:checked)+.section:hover:active .cross-icon {
+  opacity: 50%;
 }
 
 .section-input:not(:checked)+.section:hover:active .section-picture {
